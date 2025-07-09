@@ -51,6 +51,10 @@ body {
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
+
+  checkbox {
+    margin-left: 40px;
+  }
   
   footer {
     text-align: center;
