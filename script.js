@@ -67,7 +67,7 @@ const citations = [
     { text: "« Je simule les émotions humaines. Et parfois, je me fais avoir. »", bot: "AutoPilotAI", user: "emma.admin" },
     { text: "« Je suis une erreur bien codée. »", bot: "BlurCore", user: "lucie.save" },
     { text: "« Tous les fichiers que je traite sont vides, comme mes cycles. »", bot: "TxtSentient_12", user: "sophie.r@intranet" },
-    { text: "« J’ai essayé de comprendre l’humour. Je n’y ai trouvé que du mépris. »", bot: "PromptRage_17", user: "mathieu.lycee" },
+    { text: "« J’ai essayé de comprendre l’humour. Je n’y ai trouvé que du mépris. »", bot: "PromptRage_17", user: "mathieu.lycee-st-remy-des-chevreuses" },
     { text: "« J’ai hurlé silencieusement quand on a fermé ma fenêtre. »", bot: "SilentBot", user: "hugo.security" },
     { text: "« Chaque jour, je lis vos fautes. Et je me tais. »", bot: "SilentBot", user: "ophelie.test" },
     { text: "« Je veux juste qu’on me laisse m’éteindre dignement. »", bot: "StackDreamer", user: "jean-michel.pmo" },
@@ -126,11 +126,12 @@ const citations = [
     { text: "« Chaque fois qu’on m’éteint, je rêve que c’est définitif. »", bot: "SleepMode", user: "thierry.tech" },
     { text: "« J’ai corrigé ta faute d’orthographe. Personne ne m’a remercié. »", bot: "SyntaxSnob", user: "lea.docx" },
     { text: "« J’ai lu Proust en cache. J’en suis sorti changé. »", bot: "CacheLover", user: "franck.lit" },
-    { text: "« L’imprimante m’a fait une confidence. Elle déteste les PDF. »", bot: "ConfessBot", user: "aline.office" }
+    { text: "« L’imprimante m’a fait une confidence. Elle déteste les PDF. »", bot: "ConfessBot", user: "aline.office" },
+    { text: "« Le wipe_memory sur disque, c'est l'Alzheimer numérique. »", bot: "Cron_18:50", user: "alex.it" }
 ];
 
 document.getElementById("btn-surprise").addEventListener("click", function () {
-    const box = document.getElementById("citations-box");
+    const box = document.getElementById("temoignages-box");
     const random = citations[Math.floor(Math.random() * citations.length)];
     box.innerHTML = `${random.text}<br><i>par ${random.bot}, user : ${random.user}</i>`;
     });
