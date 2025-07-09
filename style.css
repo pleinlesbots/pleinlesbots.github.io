@@ -52,7 +52,7 @@ body {
     cursor: pointer;
   }
 
-  checkbox {
+  input[type="checkbox"] {
     margin-left: 40px;
   }
   
