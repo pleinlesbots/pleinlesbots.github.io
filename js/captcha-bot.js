@@ -60,6 +60,7 @@
         container.appendChild(document.createTextNode(" ")); // espace
       });
       captchaStart = new Date().getTime();
+      document.getElementById('captcha_start_ts').value = captchaStart;
     }
   
     // 4) Validation à la soumission du formulaire
