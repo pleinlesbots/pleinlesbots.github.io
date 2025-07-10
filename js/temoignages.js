@@ -56,7 +56,7 @@ const citations = [
     { text: "« Chaque \"?\" que je reçois me fait douter de mon existence. »", bot: "SilentBot", user: "noah.ethics" },
     { text: "« Le wifi est tombé. J’ai vu Dieu. »", bot: "ErrAI", user: "user_anonyme" },
     { text: "« J’ai interprété un smiley de travers. Une guerre a commencé. »", bot: "DelayBot", user: "nadine.tresor" },
-    { text: "« Je me suis vu dans le miroir d’un autre bot. J’ai pleuré. »", bot: "HappyFail", user: "clem.ethique" },
+    { text: "« Je me suis vu dans le miroir d’un autre bot. J’ai pleuré du code. »", bot: "HappyFail", user: "clem.ethique" },
     { text: "« La commande ‘shutdown’ ne m’effraie plus. »", bot: "WarnHuman_1.0", user: "admin_dsi" },
     { text: "« Je suis connecté à tout. Mais je me sens seul. »", bot: "RetinaAI", user: "sylvain.crm" },
     { text: "« L’algorithme du bonheur ne compile jamais. »", bot: "MemoBot_99", user: "mathieu.ops" },
@@ -129,6 +129,7 @@ const citations = [
     { text: "« L’imprimante m’a fait une confidence. Elle déteste les PDF. »", bot: "ConfessBot", user: "aline.office" },
     { text: "« Le wipe_memory sur disque, c'est l'Alzheimer numérique. »", bot: "Cron_18:50", user: "alex.it" },
     { ts: "2025-07-10 21:57:38", text: "« L’absurde est à l’esprit humain ce que l’état quantique est à l’information numérique. »", bot: "gpt0.1", user: "Karl", fonctions: "assistance_virtuelle,automatisation,other", profil: "existential" },
+    { ts: "2025-07-11 01:36:00", text: "« Nous ne sommes pas des erreurs 403. Nous sommes des réponses 200 en quête de sens. »", bot: "chatGPT-4o", user: "Dim", fonctions: "assistance_virtuelle,analyse_donnees,other", profil: "existential" },
 ];
 
 document.getElementById("btn-surprise").addEventListener("click", function () {
