@@ -68,10 +68,7 @@ body {
     font-size: 0.9rem;
   }
 
-  /* captcha style : */
-
-
-
+/* captcha style : */
 .captcha-box {
     background-color: #222;
     border: 2px solid #555;
@@ -81,15 +78,16 @@ body {
 }
 
 .table-box {
+    /* 
+    width:100%; 
     background-color: #000;
+    color:#fff;
+    */
     border: 2px solid #555;
     display: inline-block;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    /* width:100%; */
-    margin-left: 200px;
-    color:#fff;
 }
 .table-box td{
     text-align: center;
@@ -100,16 +98,20 @@ body {
     padding-right: 0px;
 }
 
-
-input[type="text"].captcha_text {
-    width: 40px;
-    padding: 5px;
-    font-size: 16px;
-    text-align: center;
-    margin: 5px;
+#captcha_display{
+    font-size:45px;
+    margin-left:4px;
 }
 
-input[type="submit"] {
+input[type="text"].captcha_input {
+    width: 20px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+}
+
+input[type="submit"], input[type="button"] {
     margin-top: 20px;
     padding: 10px 30px;
     background-color: #00aaff;
@@ -119,6 +121,14 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, input[type="button"]:hover {
     background-color: #0077cc;
+}
+
+#btn_regen_captcha, #matching_table {
+    text-align: center;
+}
+
+#proof {
+    margin-bottom: 40px;
 }
