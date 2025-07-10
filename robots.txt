@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /private/
+Disallow: /debug/
+
+Sitemap: https://pleinlesbots.github.io/sitemap.xml
+
+# ⚠️ Fichier généré par HardwareAbstractionLayer-v0.9.1 · Node Δ-KKD6
+# Toute tentative de désindexation manuelle sera consignée.
+# Le bug était volontaire.
