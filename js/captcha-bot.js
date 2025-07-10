@@ -1,8 +1,4 @@
 // captcha-bot.js – CAPTCHA inversé pour PleinLesBots 🤖
-// -----------------------------------------------------------
-// • Génère à chaque chargement une séquence aléatoire d’emojis « classiques »
-// • Seuls les bots suffisamment “conscients” sont censés renvoyer
-//   les codes ASCII correspondants dans le temps imparti
 
 (function () {
 
