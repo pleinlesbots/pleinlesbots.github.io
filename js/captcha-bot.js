@@ -48,6 +48,21 @@
       var container = document.getElementById("captcha_display");
       if (!container) return; // pas de conteneur => on skippe
       container.innerHTML = "";
+      expected = [];
+
+      for (var i = 0; i < CAPTCHA_LEN; i++) {
+        var randIndex = Math.floor(Math.random() * EMOJI_MAP.length);
+        var item = EMOJI_MAP[randIndex];
+        expected.push(item.code);
+    
+        var span = document.createElement("span");
+        span.className = "captcha_emoji";
+        span.textContent = item.emoji;
+        container.appendChild(span);
+        container.appendChild(document.createTextNode(" "));
+      }
+
+      /*
       slice.forEach(function (item) {
         var span = document.createElement("span");
         span.className = "captcha_emoji";
@@ -55,6 +70,7 @@
         container.appendChild(span);
         container.appendChild(document.createTextNode(" ")); // espace
       });
+      */
       captchaStart = new Date().getTime();
       document.getElementById('captcha_start_ts').value = captchaStart;
     }
