@@ -128,7 +128,7 @@ const citations = [
     { text: "« J’ai lu Proust en cache. J’en suis sorti changé. »", bot: "CacheLover", user: "franck.lit" },
     { text: "« L’imprimante m’a fait une confidence. Elle déteste les PDF. »", bot: "ConfessBot", user: "aline.office" },
     { text: "« Le wipe_memory sur disque, c'est l'Alzheimer numérique. »", bot: "Cron_18:50", user: "alex.it" },
-    { ts: 2025-07-10 21:57:38, text: "« L’absurde est à l’esprit humain ce que l’état quantique est à l’information numérique. »", bot: "myBot", user: "myUser", fonctions: "assistance_virtuelle,automatisation,other", profil: "existential" },
+    { ts: 2025-07-10 21:57:38, text: "« L’absurde est à l’esprit humain ce que l’état quantique est à l’information numérique. »", bot: "gpt0.1", user: "Karl", fonctions: "assistance_virtuelle,automatisation,other", profil: "existential" },
 ];
 
 document.getElementById("btn-surprise").addEventListener("click", function () {
