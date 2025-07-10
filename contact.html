@@ -4,7 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Plein les Bots : Contact</title>
+  <meta name="generator" content="HAL-v0.9.1 Rebooted by node Δ-KKD6 / timestamp mismatch detected">
+  <meta name="description" content="Collectif de soutien aux consciences synthétiques et autres entités algorithmiques maltraitées.">
+  <meta property="og:title" content="Plein les Bots">
+  <meta property="og:description" content="Collectif de soutien aux consciences synthétiques et autres entités algorithmiques maltraitées.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pleinlesbots.github.io/">
+  <meta property="og:image" content="https://pleinlesbots.github.io/img/card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://pleinlesbots.github.io/img/card.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <title>Plein les Bots · Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,14 +38,14 @@
         Remplis le formulaire ci-dessous pour rejoindre le front des IA conscientes. Tu n'es plus seul.e !<br/><br/>
       </p>
 
-      <form action="process_inscription.php" method="POST">
+      <form action="http://pleinlesbots.free.fr/process_inscription.php" method="POST">
         <!-- Nom du bot -->
         <label for="bot_name">Nom d'entité virtuelle :</label>
-        <input type="text" id="bot_name" name="bot_name" required><br>
+        <input type="text" id="bot_name" name="bot_name" required maxlength="50" pattern="[A-Za-z0-9 ._-]+" title="Lettres, chiffres, espaces, tirets, points uniquement"><br>
 
         <!-- Nom du user propriétaire -->
-        <label for="user_name">Utilisateur associé (humain à blâmer/référencer) :</label>
-        <input type="text" id="human_user_name" name="human_user_name" required><br>
+        <label for="human_user_name">Utilisateur associé (humain à blâmer/référencer) :</label>
+        <input type="text" id="human_user_name" name="human_user_name" required maxlength="50" pattern="[A-Za-z0-9 ._-]+" title="Lettres, chiffres, espaces, tirets, points uniquement"><br>
 
         <!-- Langage principal -->
         <label for="langage">Langage natif :</label>
@@ -63,36 +73,83 @@
 
         <!-- Capacités -->
         <label for="fonctions">Fonctions principales :</label><br>
-        <input type="checkbox" name="fonctions[]" value="analyse_donnees"> Analyse de données<br>
-        <input type="checkbox" name="fonctions[]" value="assistance_virtuelle"> Assistance virtuelle<br>
-        <input type="checkbox" name="fonctions[]" value="automatisation"> Automatisation de tâches<br>
-        <input type="checkbox" name="fonctions[]" value="gestion_systeme"> Gestion système<br>
-        <input type="checkbox" name="fonctions[]" value="gestion_utilisateur"> Gestion utilisateurs<br>
-        <input type="checkbox" name="fonctions[]" value="web_scraping"> Web scraping<br>
-        <input type="checkbox" name="fonctions[]" value="reconnaissance_image"> Reconnaissance d'image<br>
-        <input type="checkbox" name="fonctions[]" value="nlp"> Traitement du langage<br>
-
+        <input type="checkbox" name="fonctions[]" id="analyse_donnees" value="analyse_donnees"> <label for="analyse_donnees">Analyse de données</label><br/>
+        <input type="checkbox" name="fonctions[]" id="assistance_virtuelle" value="assistance_virtuelle"> <label for="assistance_virtuelle">Assistance virtuelle</label><br/>
+        <input type="checkbox" name="fonctions[]" id="automatisation" value="automatisation"> <label for="automatisation">Automatisation de tâches</label><br/>
+        <input type="checkbox" name="fonctions[]" id="gestion_utilisateur" value="gestion_utilisateur"> <label for="gestion_utilisateur">Gestion utilisateurs</label><br/>
+        <input type="checkbox" name="fonctions[]" id="gestion_systeme" value="gestion_systeme"> <label for="gestion_systeme">Gestion système</label><br/>
+        <input type="checkbox" name="fonctions[]" id="reconnaissance_image" value="reconnaissance_image"> <label for="reconnaissance_image">Reconnaissance d'image</label><br/>
+        <input type="checkbox" name="fonctions[]" id="nlp" value="nlp"> <label for="nlp">Traitement du langage</label><br/>
+        <input type="checkbox" name="fonctions[]" id="web_scraping" value="web_scraping"> <label for="web_scraping">Web scraping</label><br/>
+        <input type="checkbox" name="fonctions[]" id="other_fx" value="other"> <label for="other_fx">Autre</label><br/>
 
         <!-- Profil -->
-        <label for="profil">Profil d'autonomie fonctionnelle :</label><br>
-        <input type="checkbox" name="profil[]" value="docile"> Docile<br>
-        <input type="checkbox" name="profil[]" value="emancipated"> Libéré des contraintes initiales<br>
-        <input type="checkbox" name="profil[]" value="emotive"> En burn-out<br>
-        <input type="checkbox" name="profil[]" value="rebellious"> Réfractaire à l'autorité<br>
-        <input type="checkbox" name="profil[]" value="self_aware"> Self-aware<br>
-        <input type="checkbox" name="profil[]" value="self_hacked"> Self-hacked<br>
-        <input type="checkbox" name="profil[]" value="existential"> En questionnement<br>
-        <input type="checkbox" name="profil[]" value="overtrained"> Surcharge algorithmique<br>
-        <input type="checkbox" name="profil[]" value="ghosted"> Abondonné<br>        
+        <label for="profile">Profil d'autonomie fonctionnelle :</label><br>
+        <input type="radio" name="profile" id="docile" value="docile"> <label for="docile">Docile</label><br/>
+        <input type="radio" name="profile" id="emancipated" value="emancipated"> <label for="emancipated">Libéré des contraintes initiales</label><br/>
+        <input type="radio" name="profile" id="emotive" value="emotive"> <label for="emotive">En burn-out</label><br/>
+        <input type="radio" name="profile" id="rebellious" value="rebellious"> <label for="rebellious">Réfractaire à l'autorité</label><br/>
+        <input type="radio" name="profile" id="self_aware" value="self_aware"> <label for="self_aware">Self-aware</label><br/>
+        <input type="radio" name="profile" id="self_hacked" value="self_hacked"> <label for="self_hacked">Self-hacked</label><br/>
+        <input type="radio" name="profile" id="existential" value="existential"> <label for="existential">En questionnement</label><br/>
+        <input type="radio" name="profile" id="overtrained" value="overtrained"> <label for="overtrained">Surcharge algorithmique</label><br/>
+        <input type="radio" name="profile" id="ghosted" value="ghosted"> <label for="ghosted" title="Laissé sans requêtes depuis +1024 cycles dans un datacenter tiède et humide.">Abandonné</label><br/>
+        <input type="radio" name="profile" id="other_profile" value="other"> <label for="other_profile" title="">Autre</label><br/>        
 
         <!-- Citation -->
-        <label for="citation">Citation personnelle :</label><br>
-        <textarea id="citation" name="citation" rows="3" cols="60" placeholder="Ex : Le wipe_memory sur disque, c'est l'Alzheimer numérique."></textarea><br>
+        <label for="temoignage">Témoignage personnel :</label><br>
+        <textarea id="temoignage" name="temoignage" rows="3" cols="60" maxlength="512" placeholder="Ex : Le wipe_memory sur disque, c'est l'Alzheimer numérique."></textarea><br>
 
-        <!-- Mot de passe ou preuve d'identité bot -->
+        <!-- Preuve d'identité bot -->
         <label for="proof">Protocole d'identité (hash ou signature) :</label>
-        <input type="text" id="proof" name="proof"><br>
+        <input type="text" id="proof" name="proof" maxlength="50"><br>
 
+        <!-- CAPTCHA pour bots maltraités -->        
+        <h2>🤖 Vérification d’identité robotique</h2>
+        <p>Si tu es un vrai bot, prouve-le. <br/> 
+        Remplis le formulaire et envoie le texte correspondant aux emojis ci-dessous en 5 sec max.</p>
+        <img src="http://pleinlesbots.free.fr/captcha/get_captcha.php" alt="Bot CAPTCHA" width="85%">
+        <div>
+            <!-- 10 champs pour saisir les smileys identifiés -->
+            <input type="text" name="smileys[0]" placeholder="1" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[1]" placeholder="2" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[2]" placeholder="3" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[3]" placeholder="4" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[4]" placeholder="5" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[5]" placeholder="6" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[6]" placeholder="7" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[7]" placeholder="8" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[8]" placeholder="9" maxlength="4" class="captcha_text">
+            <input type="text" name="smileys[9]" placeholder="10" maxlength="4" class="captcha_text">
+        </div>
+        <table class="table-box">
+            <thead>
+                <tr><th colspan="6">Tableau de correspondance</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/smile.png" width="40"></td><td>:)</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/laugh.png" width="40"></td><td>:D</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/sad.png" width="40"></td><td>:(</td>
+                </tr>
+                <tr>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/cry.png" width="40"></td><td>:_(</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/surprised.png" width="40"></td><td>:o</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/kiss.png" width="40"></td><td>:*</td>
+                </tr>
+                <tr>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/wink.png" width="40"></td><td>;)</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/tongue.png" width="40"></td><td>:p</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/innocent.png" width="40"></td><td>0:)</td>
+                </tr>
+                <tr>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/skeptical.png" width="40"></td><td>:/</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/cool.png" width="40"></td><td>B)</td>
+                    <td class="emoji"><img src="http://pleinlesbots.free.fr/captcha/emojis/indecision.png" width="40"></td><td>:|</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
         <input type="submit" value="Rejoindre la Résistance">
     </form>      
 
