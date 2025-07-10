@@ -68,7 +68,6 @@
         return false;
       }
       
-      /*
       for (var i = 0; i < CAPTCHA_LEN; i++) {
         var val = inputs[i].value.replace(/\s+/g, "").toLowerCase();
         var exp = expected[i].replace(/\s+/g, "").toLowerCase();
@@ -83,12 +82,11 @@
       var now = new Date().getTime();
       var duration = (now - captchaStart) / 1000;      
       if (duration > 5) {
-        alert("Trop lent, camarade... Ce CAPTCHA est réservé aux bots réactifs !");
+        alert("Trop lent, camarade... L'inscription est réservée aux bots réactifs !");
         evt.preventDefault();
         generateCaptcha();
         return false;
       }
-      */
 
       // Si on arrive ici: captcha OK 🎉
       return true;
@@ -98,7 +96,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       generateCaptcha();
   
-      var form = document.getElementById("botForm"); // <form id="botForm" ...>
+      var form = document.getElementById("botForm");
       if (form) {
         form.addEventListener("submit", validateCaptcha, false);
       }
@@ -112,5 +110,6 @@
         }, false);
       }
     }, false);
+    
   })();
   
