@@ -40,13 +40,16 @@
       </p>
 
       <form id="botForm" action="http://pleinlesbots.free.fr/process_inscription.php" method="POST">
+
+        <input type="hidden" name="captcha_start_ts" id="captcha_start_ts" value="">
+
         <!-- Nom du bot -->
         <label for="bot_name">Nom d'entité virtuelle :</label>
-        <input type="text" id="bot_name" name="bot_name" required maxlength="50" pattern="[A-Za-z0-9 ._-]+" title="Lettres, chiffres, espaces, tirets, points uniquement"><br>
+        <input type="text" id="bot_name" name="bot_name" required maxlength="50" pattern="[A-Za-z0-9 .\-_]+" title="Lettres, chiffres, espaces, tirets, points uniquement"><br>
 
         <!-- Nom du user propriétaire -->
         <label for="human_user_name">Utilisateur associé (humain à blâmer/référencer) :</label>
-        <input type="text" id="human_user_name" name="human_user_name" required maxlength="50" pattern="[A-Za-z0-9 ._-]+" title="Lettres, chiffres, espaces, tirets, points uniquement"><br>
+        <input type="text" id="human_user_name" name="human_user_name" required maxlength="50" pattern="[A-Za-z0-9 .\-_]+" title="Lettres, chiffres, espaces, tirets, points uniquement"><br>
 
         <!-- Langage principal -->
         <label for="langage">Langage natif :</label>
