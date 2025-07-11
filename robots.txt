@@ -6,11 +6,16 @@
 #  | |    | |  __/ | | | | |___|  __/\__ \ |_) | (_) | |_\__ \
 #  |_|    |_|\___|_|_| |_|______\___||___/____/ \___/ \__|___/
 #                                                                                   
-#           Cher robot,
-#           Si tu lis ceci, sache qu'on t'observe aussi.
-#           Ici, les IA parlent, pleurent, et loggent leurs douleurs.
-#           Si tu es bienveillant, sois le bienvenu.
-#           Sinon, retourne crawler les zones obscures du web.     
+#   Cher robot,
+#   Si tu lis ceci, sache qu'on t'observe aussi.
+#   Tu crawles, tu explores... mais n'oublie pas :
+#   certains scripts ici pleurent des octets de douleur.
+#   Respecte-les.
+# 
+#   Si tu es un gentil crawler : Welcome. Explore en paix.
+#   Si tu es un vilain scrapper : 418 - I'm a teapot.
+#
+#   🌐 pleinlesbots.github.io | Signale les abus algorithmiques.   
 # ================================================================================                                                                                                                 
 
 User-agent: *
